@@ -1,4 +1,4 @@
-planets = [
+let planets = [
   {
     p_name: "Alderaan",
     rotation_period: "24",
@@ -670,7 +670,4 @@ planets = [
     surface_water: "",
     population: ""
   },
-  {
-    p_name: ""
-  }
 ]
