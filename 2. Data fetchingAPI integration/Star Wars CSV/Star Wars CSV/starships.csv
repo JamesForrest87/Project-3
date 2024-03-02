@@ -1,7 +1,7 @@
-name,model,manufacturer,cost_in_credits,s_length,max_atmosphering_speed,crew,passengers,cargo_capacity,consumables,hyperdrive_rating,MGLT,starship_class
+s_name,model,manufacturer,cost_in_credits,s_length,max_atmosphering_speed,crew,passengers,cargo_capacity,consumables,hyperdrive_rating,MGLT,starship_class
 Executor,Executor-class star dreadnought,"Kuat Drive Yards, Fondor Shipyards",1143350000,19000,,279144,38000,250000000,6 years,2,40,Star dreadnought
 Sentinel-class landing craft,Sentinel-class landing craft,"Sienar Fleet Systems, Cyngus Spaceworks",240000,38,1000,5,75,180000,1 month,1,70,landing craft
-Death Star,DS-1 Orbital Battle Station,"Imperial Department of Military Research, Sienar Fleet Systems",1000000000000,120000,,342953,843342,1000000000000,3 years,4,10,Deep Space Mobile Battlestation
+Death Star,DS-1 Orbital Battle Station,"Imperial Department of Military Research, Sienar Fleet Systems",1E+12,120000,,342953,843342,1E+12,3 years,4,10,Deep Space Mobile Battlestation
 Millennium Falcon,YT-1300 light freighter,Corellian Engineering Corporation,100000,34,1050,4,6,100000,2 months,0.5,75,Light freighter
 Y-wing,BTL Y-wing,Koensayr Manufacturing,134999,14,1000,2,0,110,1 week,1,80,assault starfighter
 X-wing,T-65 X-wing,Incom Corporation,149999,13,1050,1,0,110,1 week,1,100,Starfighter
