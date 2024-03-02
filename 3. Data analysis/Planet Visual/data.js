@@ -669,5 +669,5 @@ let planets = [
     terrain: "deserts",
     surface_water: "",
     population: ""
-  },
-]
+  }
+];
