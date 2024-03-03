@@ -23,21 +23,23 @@ let trace1 = {
   type: "bar"
 };
 
-let layout1 =  { title: "Diameter", 
-xaxis:{title:"Planets Name"}
+let layout1 =  { title: "Planets - Diameter  Earth = 40k", 
+xaxis:{title:"Planets Name"},
+yaxis:{title:"Diamter in km"}
 }
-let layout2 =  { title: "Population", 
-xaxis:{title:"Planets Name"}
+let layout2 =  { title: "Planets - Population Earth = 8b", 
+xaxis:{title:"Planets Name"},
+yaxis:{title:"Population"}
 }
-let layout3 =  { title: "Rotation Period - Day", 
-xaxis:{title:"Planets Name"}
+let layout3 =  { title: "Planets - Rotation period = 18 Earth hours or 0.75 Earth days", 
+xaxis:{title:"Planets Name"},
+yaxis:{title:"Rotation Period"}
 }
-let layout4 =  { title: "Orbital Period - Year", 
-xaxis:{title:"Planets Name"}
+let layout4 =  { title: "Planets - Orbital period = 402 standard days or Earth = 1.1 year", 
+xaxis:{title:"Planets Name"},
+yaxis:{title:"Orbital Period"}
 }
-let layout5 =  { title: "Surface Water", 
-xaxis:{title:"Planets Name"}
-}
+
 // Create our second trace
 let trace2 = {
   x: p_name,
@@ -48,18 +50,18 @@ let trace2 = {
 let trace3 = {
   x: p_name,
   y: rotation_period,
-  type: "scatter"
+  type: "bar"
 };// Create our fourth trace
 let trace4 = {
   x: p_name,
   y: orbital_period,
-  type: "scatter"
+  type: "bar"
 };
 // Create our fifth trace
 let trace5 = {
   x: p_name,
   y: surface_water,
-  type: "scatter"
+  type: "bar"
 };
 
 // The data array consists of five traces

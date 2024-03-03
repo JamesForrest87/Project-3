@@ -13,7 +13,7 @@ let planets = [
   {
     p_name: "Yavin IV",
     rotation_period: "24",
-    orbital_period: "4818",
+    orbital_period: "",
     diameter: "10200",
     climate: "temperate, tropical",
     gravity: "1 standard",
@@ -46,8 +46,8 @@ let planets = [
   {
     p_name: "Bespin",
     rotation_period: "12",
-    orbital_period: "5110",
-    diameter: "118000",
+    orbital_period: "",
+    diameter: "",
     climate: "temperate",
     gravity: "1.5 (surface), 1 standard (Cloud City)",
     terrain: "gas giant",
@@ -85,7 +85,7 @@ let planets = [
     gravity: "1 standard",
     terrain: "cityscape, mountains",
     surface_water: "",
-    population: "1000000000000"
+    population: ""
   },
   {
     p_name: "Kamino",
@@ -243,7 +243,7 @@ let planets = [
   },
   {
     p_name: "Nal Hutta",
-    rotation_period: "87",
+    rotation_period: "",
     orbital_period: "413",
     diameter: "12150",
     climate: "temperate",
@@ -286,15 +286,15 @@ let planets = [
     population: "4000000000"
   },
   {
-    p_name: "NA",
-    rotation_period: "0",
-    orbital_period: "0",
-    diameter: "0",
+    p_name: "Earth",
+    rotation_period: "0.75",
+    orbital_period: "1.1",
+    diameter: "40000",
     climate: "NA",
     gravity: "NA",
     terrain: "NA",
     surface_water: "",
-    population: ""
+    population: "9000000000"
   },
   {
     p_name: "Trandosha",
@@ -431,7 +431,7 @@ let planets = [
   {
     p_name: "Tund",
     rotation_period: "48",
-    orbital_period: "1770",
+    orbital_period: "",
     diameter: "12190",
     climate: "NA",
     gravity: "NA",
@@ -602,7 +602,7 @@ let planets = [
     gravity: "1",
     terrain: "urban, vines",
     surface_water: "",
-    population: "500000000000"
+    population: ""
   },
   {
     p_name: "Muunilinst",
