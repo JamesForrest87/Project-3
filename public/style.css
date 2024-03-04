@@ -590,3 +590,27 @@ html{
     transform: translateY(-2000px);
   }
 }
+
+#characterDropdownContainer label {
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold;
+}
+
+#characterDropdownContainer2 label {
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold;
+}
+
+#characterDropdownContainer3 label {
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold;
+}
+
+#characterDropdownContainer4 label {
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold;
+}
+
+#characterDropdownContainer5 label {
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold;
