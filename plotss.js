@@ -8,22 +8,13 @@ function init() {
          } ]
     layout1 =  { title: "Planets data compared to Earth", 
          xaxis:{title:"Planets Name"},
+         yaxis:{title:"Value"},
         //  yaxis:{title:"Diamter in km"}
          }
    Plotly.newPlot("plot", data, layout1);
+   CreateMenu2();
 };
   // ----
-
-//  let layout =  { title: "Planets - Diameter  Earth = 40k", 
-//       xaxis:{title:"Planets Name"},
-//       yaxis:{title:"Diamter in km"},
-//       type : "bar",
-  // let trace1 = {
-  //       x: p_name,
-  //       y: diameter,
-  // let data1 = [trace1];
-  //       type: "bar"
-  //     };
 
 
 // Call updatePlotly() when a change takes place to the DOM
@@ -45,6 +36,7 @@ function updatePlotly() {
   let rotation_period= []
   let orbital_period = []
   let surface_water = []
+ 
   // For loop to populate arrays
   for (let i = 0; i < planets.length; i++) {
     row = planets[i];
@@ -56,12 +48,15 @@ function updatePlotly() {
     surface_water.push(row.surface_water);
   }
 
+
+
   if (dataset === 'dataset1') {
     x = p_name;
     y = diameter;
     layout =  { title: "Planets - Diameter  Earth = 40k", 
     xaxis:{title:"Planets Name"},
     yaxis:{title:"Diamter in km"},
+    
     }
     }
   else if (dataset === 'dataset2') {
@@ -69,12 +64,12 @@ function updatePlotly() {
     y = population;
     layout =  { title: "Planets - Diameter  Earth = 40k", 
     xaxis:{title:"Planets Name"},
-    yaxis:{title:"Diamter in km"},
+    yaxis:{title:"Diamter in km"}
   }}
   else if (dataset === 'dataset3') {
     x = p_name;
     y =rotation_period;
-    layout = layout2
+ 
   }
   else if (dataset === 'dataset4') {
     x = p_name;
@@ -84,6 +79,26 @@ function updatePlotly() {
     x = p_name;
     y = surface_water;
   }
+
+//---------Characters Chart Start -----------//
+  // let c_name = []
+  // let height = []
+  // let mass = []
+  // for (let i = 0; i < characters.length; i++) {
+  //   row = characters[i];
+  //   c_name.push(row.c_name);
+  //   height.push(row.height);
+  //   mass.push(row.mass);
+  // if (dataset2 === 'dataset6') {
+  //     x = c_name;
+  //     y =  height;
+  //   }
+  // else if (dataset2 === 'dataset7') {
+  //     x = c_name;
+  //     y = mass;
+  //   }
+//---------Characters Chart Ends -----------//
+
   // Note the extra brackets around 'x' and 'y'
   Plotly.restyle("plot", "x", [x]);
   Plotly.restyle("plot", "y", [y]);
@@ -91,82 +106,3 @@ function updatePlotly() {
 }
 
 init();
-
-// // Initializes the page with a default plot
-// function init() {
-//   data = 
-//     [{
-//         x: p_name,
-//         y: diameter,
-//         type: "bar",
-//          } ]
-//     layout1 =  { title: "Planets data compared to Earth", 
-//          xaxis:{title:"Planets Name"},
-//         //  yaxis:{title:"Diamter in km"}
-//          }
-//    Plotly.newPlot("plot", data, layout1);
-// };
-//   // ----
-
-// //  let layout =  { title: "Planets - Diameter  Earth = 40k", 
-// //       xaxis:{title:"Planets Name"},
-// //       yaxis:{title:"Diamter in km"},
-// //       type : "bar",
-//   // let trace1 = {
-//   //       x: p_name,
-//   //       y: diameter,
-//   // let data1 = [trace1];
-//   //       type: "bar"
-//   //     };
-
-
-// // Call updatePlotly() when a change takes place to the DOM
-// d3.selectAll("#selDataset_a").on("change", updatePlotly);
-
-// // This function is called when a dropdown menu item is selected
-// function updatePlotly() {
-//   // Use D3 to select the dropdown menu
-//   let dropdownMenu = d3.select("#selDataset_a");
-//   // Assign the value of the dropdown menu option to a variable
-//   let dataset = dropdownMenu.property("value");
-
-//   // Initialize x and y arrays
-//   let x = [];
-//   let y = [];
-//   let c_name = []
-//   let height = []
-//   let mass = []
-
-//   // For loop to populate arrays
-//   for (let i = 0; i < characters.length; i++) {
-//     row = characters[i];
-//     c_name.push(row.p_name);
-//     height.push(row.height);
-//     mass.push(row.mass);
-  
-//   }
-
-//   if (dataset_a === 'dataset1') {
-//     x = c_name;
-//     y = height;
-//     layout =  { title: "Planets - Diameter  Earth = 40k", 
-//     xaxis:{title:"Planets Name"},
-//     yaxis:{title:"Diamter in km"},
-//     }
-//     }
-//   else if (dataset_a === 'dataset2') {
-//     x = c_name;
-//     y = mass;
-//     layout =  { title: "Planets - Diameter  Earth = 40k", 
-//     xaxis:{title:"Planets Name"},
-//     yaxis:{title:"Diamter in km"},
-//   }}
-  
-//   }
-//   // Note the extra brackets around 'x' and 'y'
-//   Plotly.restyle("plot", "x", [x]);
-//   Plotly.restyle("plot", "y", [y]);
-//     // Plotly.restyle("plot","layout");
-// }
-
-// init();

@@ -17,42 +17,73 @@
   <title>Events</title>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+  <style>
+    h1  {
+      color: gold;
+      text-align: center;
+    }
+    body {
+      background-image: url('starwars.png');
+    }
+  </style>
 </head>
 
 <!-- <body> -->
 <body>
-
-
+  
   <section class = "wrapper">
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
     <div id="title">
-    <span>STARWAR PLANETS DATA</span>
-      <br>
-      <span>Compare planets with Earth</span> 
-      <section class = "wrapper">
-        <div id="plot"></div>
-        <select id="selDataset"> --
-        <option value="dataset1">Daimeter</option>
-        <option value="dataset2">Population</option> -
-        <option value="dataset3">rotation_period</option>
-        <option value="dataset4">Orbital Period</option>
-        <option value="dataset5">Surface Water</option>
-<!-- 
-  <div id="plot1"></div>
-  <div id="plot2"></div> 
-  <div id="plot3"></div> 
-  <div id="plot4"></div> 
-  <div id="plot5"></div>  -- -->
-  <script src="data.js"></script>
-  <script src="plots.js"></script>
- 
-    </select> 
-    <script src="data.js"></script>
-    <script src="plotss.js"></script>  
+    <span><h1>STAR WARS<br>
+      March the 4th be with you
+    </h1></span>
+   <span>March the 4th be with you</span> 
+    <section class = "wrapper">
+    <div id="plot"></div>
+    <select id="selDataset"> --
+        <option value="dataset1">Planets Daimeter</option>
+        <option value="dataset2">Planets Population</option> -
+        <option value="dataset3">Planets rotation_period</option>
+        <option value="dataset4">Planets Orbital Period</option>
+        <option value="dataset5">Planets Surface Water</option> 
+    </select>
+
+    <select id="selDataset2" onchange="changeSelection2(this.value)">
+      <option value="dataset6">Character Height</option>
+      <option value="dataset7">Character Mass</option> 
+    </select>
+
+    <select id="selDataset3" onchange="changeSelection3(this.value)">
+      <option value="dataset8">Species Height </option>
+      <option value="dataset9">Species Span</option> 
+    </select>
+
+    <select id="selDataset4" onchange="changeSelection4(this.value)">
+      <option value="dataset10">Vehicle Cargo Capacity</option>
+      <option value="dataset11">Vehicle Passengers</option> 
+    </select>
+
+    <select id="selDataset5" onchange="changeSelection5(this.value)">
+      <option value="dataset12">Starships Cargo Capacity</option>
+      <option value="dataset13">Starships Passengers</option> 
+    </select>
+
+    <select id="selDataset7" onchange="changeSelection7(this.value)">
+      <option value="dataset14">Starwars Year</option>
+      <option value="dataset15">Starwars Pieces</option> 
+    </select>
+
+<script src="data.js"></script>
+<script src="plots.js"></script>
+<script src="data.js"></script>
+<script src="characters.js"></script>
+<script src="data.js"></script>
+<script src="plotss.js"></script> 
 
 
-  
 </body>
 </html>

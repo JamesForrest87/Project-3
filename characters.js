@@ -1,4 +1,4 @@
- [
+ characters = [
   {
     c_name: "Luke Skywalker",
     height: "172",
