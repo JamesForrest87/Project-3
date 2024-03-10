@@ -80,26 +80,3 @@ Plotly.newPlot("plot4", data4,layout4);
 Plotly.newPlot("plot5", data5,layout5);
 
 
-
-// // Create data array
-// let data = [trace1, trace2];
-
-// // Apply a title to the layout
-// let layout = {
-//   title: "Planets Data",
-//   barmode: "group",
-//   // Include margins in the layout so the x-tick labels display correctly
-//   xaxis :{
-//     tickangle: -45
-//   },
-//   margin: {
-//     l: 50,
-//     r: 50,
-//     b: 200,
-//     t: 50,
-//     pad: 4
-//   }
-// };
-
-// // Render the plot to the div tag with id "plot"
-// Plotly.newPlot("plot", data, layout);
