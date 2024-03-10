@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Star Wars Project</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>a {
+    padding-right: 10px;
+  }</style>
+  
+</head>
+
+<body>
+  
+</body>
+<title>selection</title>
+<nav><a href="/">Vehicles</a><a href="/char">Characters</a><a href="/species">Species</a></nav>
+
+  <div id="errorContainer"></div>
+
+  <div>
+    <label for="vehiclesDropdown">Vehicle info:</label>
+    <select id="vehiclesDropdown">
+      <option value="">Vehicle</option>
+      <option value="maxSpeed">Max Speed </option>
+      <option value="length">Length </option>
+      <!-- Dynamic options will be inserted here -->
+    </select>
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <h1 id="title"></h1>
+  <div id="vehiclesSpeedPlot"></div>
+  <script src="vehicle.js"></script>
+
+</body>
+
+</html>

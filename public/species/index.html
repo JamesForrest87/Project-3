@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Species</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>a {
+    padding-right: 10px;
+  }</style>
+</head>
+
+<body>
+<h1>Character Information</h1>
+<nav><a href="/">Vehicles</a><a href="/char">Characters</a><a href="/species">Species</a></nav>
+  <div id="errorContainer"></div>
+
+  <div>
+    <label for="speciesDropdown">Character info:</label>
+    <select id="speciesDropdown">
+      <option value="">Species</option>
+      <option value="avgHeight">Average Height</option>
+      <!-- Dynamic options will be inserted here -->
+    </select>
+    <canvas id="specChart"></canvas>
+  </div>
+
+  <h1 id="title"></h1>
+  <div id="vehiclesSpeedPlot"></div>
+  <script src="../Species.js"></script>
+
+</body>
+
+</html>

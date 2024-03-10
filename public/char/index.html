@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Graph Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>a {
+    padding-right: 10px;
+  }</style>
+</head>
+
+<body>
+<h1>Character Information</h1>
+<nav><a href="/">Vehicles</a><a href="/char">Characters</a><a href="/species">Species</a></nav>
+  <div id="errorContainer"></div>
+
+  <div>
+    <label for="characterDropdown">Character info:</label>
+    <select id="characterDropdown">
+      <option value="">Characters</option>
+      <option value="height">Height</option>
+      <!-- Dynamic options will be inserted here -->
+    </select>
+    <canvas id="charChart"></canvas>
+  </div>
+
+  <h1 id="title"></h1>
+  <div id="vehiclesSpeedPlot"></div>
+  <script src="../character.js"></script>
+
+</body>
+
+</html>
