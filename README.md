@@ -46,12 +46,11 @@ Visualizations: Contains code and files for generating visualizations based on t
 Getting Started:
 To get started with exploring the Star Wars dataset and conducting data analysis:
 Clone this repository to your local machine.
-Navigate to the scripts directory and run the provided scripts to import the data into an SQLite database.
-Explore the queries directory to find SQL queries for analyzing the data according to different themes or questions of interest.
-Utilize the visualizations directory to generate visual representations of the analyzed data using your preferred data visualization tools or libraries
-
-
+Open the repository in terminal, gitbash or terminal in VScode 
+Within the terminal or gitbash, run npm install 
+After running npm install, then run npm run start express 
+After that, select the local host at the bottom and it should take you to the server 
+Enjoy some Star Wars graphs! 
 
 Acknowledgments:
-We would like to express our gratitude to the contributors of the Star Wars API (SWAPI), Legos Brickset and Kaggle CSV datasets used in this project. Their efforts in compiling and maintaining these datasets have been instrumental in enabling our exploration of the Star Wars universe through data analysis and visualization.  
-
+We would like to express our gratitude to the contributors of the Star Wars API (SWAPI), Legos Brickset and Kaggle CSV datasets used in this project. Their efforts in compiling and maintaining these datasets have been instrumental in enabling our exploration of the Star Wars universe through data analysis and visualization. We would also like to thank Nicholas' cousin for his help in understanding how to launch the site fully and intigrate our graphs in an easy way on the website.
