@@ -36,7 +36,7 @@ async function charApp() {
                         data: {
                             labels: labels,
                             datasets: [{
-                                label: 'Character Height',
+                                label: 'Character Height (cm)',
                                 // Use the "value" column as the data for the chart
                                 data: values,
                                 backgroundColor: 'rgba(75, 192, 192, 0.2)',

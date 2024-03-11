@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Star Wars Project - Characters</title>
+  <title>Star Wars Project - Planets</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>a {
     padding-right: 10px;
@@ -17,18 +17,17 @@
   <div id="errorContainer"></div>
 
   <div>
-    <label for="characterDropdown">Character info:</label>
-    <select id="characterDropdown">
-      <option value="">Characters</option>
-      <option value="height">Height</option>
+    <label for="planetsDropdown">Character info:</label>
+    <select id="planetsDropdown">
+      <option value="">Planets</option>
+      <option value="rotation">Rotation Period</option>
+      <option value="orbit">Orbital Period</option>
       <!-- Dynamic options will be inserted here -->
     </select>
-    <canvas id="charChart"></canvas>
+    <canvas id="planChart"></canvas>
   </div>
 
-  <h1 id="title"></h1>
-  <div id="vehiclesSpeedPlot"></div>
-  <script src="../character.js"></script>
+  <script src="../planets.js"></script>
 
 </body>
 

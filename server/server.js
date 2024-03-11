@@ -49,6 +49,27 @@ app.get('/vehicle/length', (req, res) => {
     });
 });
 
+// Requires there to be a `length and max speed` query paramter.
+app.get('/vehicle/compare', (req, res) => {
+    console.log(`Running handler for ${req.url}`)
+    // Extract and validate the request paramters.
+    const query = `
+        SELECT name, length, max_atmosphering_speed
+        FROM vehicles`
+    db.all(query, (err, rows) => {
+        if (err) {
+            console.error('Database error:', err);
+            res.status(500).json({ error: 'Database error' });
+            return;
+        }
+
+        // Send the data as JSON in the response
+        res.json({
+            data: rows
+        });
+    });
+});
+
 // Requires there to be a `character height` query paramter.
 app.get('/character/height', (req, res) => {
     console.log(`Running handler for ${req.url}`)
@@ -78,6 +99,48 @@ app.get('/species/avgHeight', (req, res) => {
     const query = `
         SELECT name, average_height
         FROM species`
+    db.all(query, (err, rows) => {
+        if (err) {
+            console.error('Database error:', err);
+            res.status(500).json({ error: 'Database error' });
+            return;
+        }
+
+        // Send the data as JSON in the response
+        res.json({
+            data: rows
+        });
+    });
+});
+
+// Requires there to be a `planet rotation period` query paramter.
+app.get('/planet/rotation', (req, res) => {
+    console.log(`Running handler for ${req.url}`)
+    // Extract and validate the request paramters.
+    const query = `
+        SELECT name, rotation_period
+        FROM planets`
+    db.all(query, (err, rows) => {
+        if (err) {
+            console.error('Database error:', err);
+            res.status(500).json({ error: 'Database error' });
+            return;
+        }
+
+        // Send the data as JSON in the response
+        res.json({
+            data: rows
+        });
+    });
+});
+
+// Requires there to be a `planet orbital period` query paramter.
+app.get('/planet/orbit', (req, res) => {
+    console.log(`Running handler for ${req.url}`)
+    // Extract and validate the request paramters.
+    const query = `
+        SELECT name, orbital_period
+        FROM planets`
     db.all(query, (err, rows) => {
         if (err) {
             console.error('Database error:', err);

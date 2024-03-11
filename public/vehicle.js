@@ -32,11 +32,11 @@ async function initApp() {
                         myChart.destroy()
                     };
                     myChart = new Chart(ctx, {
-                        type: 'bar',
+                        type: 'radar',
                         data: {
                             labels: labels,
                             datasets: [{
-                                label: 'Max Atmospheric Speed',
+                                label: 'Max Atmospheric Speed (km/h)',
                                 // Use the "value" column as the data for the chart
                                 data: values,
                                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
@@ -57,7 +57,7 @@ async function initApp() {
                     console.log(datal)
                     const labels = datal.data.map(item => item.name);
                     const values = datal.data.map(item => item.length);
-
+                    
                     //render chart
                     console.log(labels)
                     console.log(values)
@@ -70,7 +70,7 @@ async function initApp() {
                         data: {
                             labels: labels,
                             datasets: [{
-                                label: 'Vehicle Length',
+                                label: 'Vehicle Length (m)',
                                 // Use the "value" column as the data for the chart
                                 data: values,
                                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
@@ -81,7 +81,7 @@ async function initApp() {
                     });
                 })
                 .catch(error => console.error('Error fetching data:', error));
-        };
+        }; 
     })
 };
 
