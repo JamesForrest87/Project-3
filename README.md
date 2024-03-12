@@ -46,9 +46,8 @@ Visualizations: Contains code and files for generating visualizations based on t
 Getting Started:
 To get started with exploring the Star Wars dataset and conducting data analysis:
 Clone this repository to your local machine.
-Open the repository in terminal, gitbash or terminal in VScode 
-Within the terminal or gitbash, run npm install 
-After running npm install, then run npm run start express 
+Open the repository in terminal, gitbash or terminal in VScode within the terminal or gitbash, run npm install 
+After running npm install, then run npm run start  
 After that, select the local host at the bottom and it should take you to the server 
 Enjoy some Star Wars graphs! 
 
