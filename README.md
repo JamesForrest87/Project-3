@@ -52,4 +52,4 @@ After that, select the local host at the bottom and it should take you to the se
 Enjoy some Star Wars graphs! 
 
 Acknowledgments:
-We would like to express our gratitude to the contributors of the Star Wars API (SWAPI), Legos Brickset and Kaggle CSV datasets used in this project. Their efforts in compiling and maintaining these datasets have been instrumental in enabling our exploration of the Star Wars universe through data analysis and visualization. We would also like to thank Nicholas' cousin for his help in understanding how to launch the site fully and intigrate our graphs in an easy way on the website.
+We would like to express our gratitude to the contributors of the Star Wars API (SWAPI), Legos Brickset and Kaggle CSV datasets used in this project. Their efforts in compiling and maintaining these datasets have been instrumental in enabling our exploration of the Star Wars universe through data analysis and visualization. We would also like to thank Nicholas' cousin, Jeffrey, for his help in understanding how to launch the site fully and intigrate our graphs in an easy way on the website.
