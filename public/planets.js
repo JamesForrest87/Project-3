@@ -71,8 +71,29 @@ async function planetApp() {
                                 borderWidth: 1
                             }]
                         },
-                    });
-                })
+                        options:{
+                            scales: {
+                                x: {
+                                    ticks:{
+                                        color: 'rgba(231, 210, 92, 1)',
+                                    }
+                                },
+                                y: {
+                                    ticks: {
+                                        color:'rgba(231, 210, 92, 1)',
+                                        font: {
+                                            weight: 'bold'
+                                    },
+                                    beginAtZero: true
+                                }
+                            }
+
+                            
+                        }
+                    },
+            });
+            })
+                    
                 .catch(error => console.error('Error fetching data:', error));
         };
     
@@ -98,7 +119,6 @@ async function planetApp() {
                             labels: labels,
                             datasets: [{
                                 label: 'Orbital Period of Planets in Earth Days (days)',
-                                // Use the "value" column as the data for the chart
                                 data: values,
                                 backgroundColor: ['rgb(255, 0, 0)',
                                     'rgb(0, 0, 255)',
@@ -130,10 +150,33 @@ async function planetApp() {
                                     'rgba(255, 0, 255, 0.5)'],
                                 borderColor: 'rgba(75, 192, 192, 1)',
                                 borderWidth: 1
+                                
+                                
                             }]
                         },
-                    });
-                })
+                        options:{
+                            scales: {
+                                x: {
+                                    ticks:{
+                                        color: 'rgba(231, 210, 92, 1)',
+                                    }
+                                },
+                                y: {
+                                    ticks: {
+                                        color:'rgba(231, 210, 92, 1)',
+                                        font: {
+                                            weight: 'bold'
+                                    },
+                                    beginAtZero: true
+                                }
+                            }
+
+                            
+                        }
+                    },
+            });
+            })
+                    
                 .catch(error => console.error('Error fetching data:', error));
         };
 

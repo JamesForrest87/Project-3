@@ -13,10 +13,12 @@ html{
     text-align: center;
     font-family: 'lato',sans-serif;
     font-weight: 300;
-    font-size: 50px;
-    letter-spacing: 10px;
+    font-size: 40px;
+    letter-spacing: 3px;
     margin-top: -60px;
     padding-left: 10px;
+    font-weight: bold;
+    font-style: italic;
   }
             
   #title span {
@@ -595,3 +597,97 @@ html{
     transform: translateY(-2000px);
   }
 }
+
+.vehicles-info-label{
+  font-weight: bold;
+  font-size: 16px;
+  color: #e7d25c; /* Change color as needed */
+  margin-right: 10px;
+
+}
+
+.character-info-label{
+  font-weight: bold;
+  font-size: 16px;
+  color: #e7d25c; /* Change color as needed */
+  margin-right: 10px;
+
+}
+
+.planets-info-label{
+  font-weight: bold;
+  font-size: 16px;
+  color: #e7d25c; /* Change color as needed */
+  margin-right: 10px;
+
+}
+
+.species-info-label{
+  font-weight: bold;
+  font-size: 16px;
+  color: #e7d25c; /* Change color as needed */
+  margin-right: 10px;
+  
+}
+
+.Characters-page{
+  font-weight: bold;
+  font-size: 24px;
+  color: #e7d25c; /* Change color as needed */
+  margin-right: 10px;
+}
+.Vehicles-page{
+  font-weight: bold;
+  font-size: 24px;
+  color: #e7d25c; /* Change color as needed */
+  margin-right: 10px;
+}
+      
+.Species-page{
+  font-weight: bold;
+  font-size: 24px;
+  color: #e7d25c; /* Change color as needed */
+  margin-right: 10px;
+}
+
+.Planets-page{
+  font-weight: bold;
+  font-size: 24px;
+  color: #e7d25c; /* Change color as needed */
+  margin-right: 10px;
+}
+
+.characterBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh; /* Adjust height as needed */
+}
+
+.vehicleBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh; /* Adjust height as needed */
+}
+
+.speciesBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh; /* Adjust height as needed */
+}
+
+.planetsBox {
+  display: flex;
+  justify-content: top;
+  align-items: top;
+  height: 75vh; /* Adjust height as needed */
+}
+
+
+
+
+
+
+

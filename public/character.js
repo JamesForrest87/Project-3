@@ -39,13 +39,35 @@ async function charApp() {
                                 label: 'Character Height (cm)',
                                 // Use the "value" column as the data for the chart
                                 data: values,
-                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                backgroundColor: 'rgba(75, 192, 192, 0.7)',
                                 borderColor: 'rgba(75, 192, 192, 1)',
                                 borderWidth: 1
                             }]
                         },
-                    });
-                })
+                        options:{
+                            scales: {
+                                x: {
+                                    ticks:{
+                                        color: 'rgba(231, 210, 92, 1)',
+                                    }
+                                },
+                                y: {
+                                    ticks: {
+                                        color:'rgba(231, 210, 92, 1)',
+                                        font: {
+                                            weight: 'bold'
+                                    },
+                                    beginAtZero: true
+                                }
+                            }
+
+                            
+                        }
+                    },
+            });
+            })
+                   
+                
                 .catch(error => console.error('Error fetching data:', error));
         };
 

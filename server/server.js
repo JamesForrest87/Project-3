@@ -1,11 +1,11 @@
 const express = require('express');
 const sqlite3 = require('sqlite3');
-
+const path = require('path')
 const app = express();
 const db = new sqlite3.Database('./Resources/StarWarsdatabase.db');
 
 // Configure express to serve static files from the `public` directory.
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname,'public')));
 
 // Requires there to be a `speed` query paramter.
 app.get('/vehicle/speed', (req, res) => {
