@@ -58,11 +58,19 @@ async function initApp() {
                                         
                                     },
                                     ticks: {
-                                        color: 'red'
+                                        color: 'red',
+                                        font: {
+                                            weight: 'bold'
+                                        }
                                     },
                                 }
     
                                 
+                            },
+                            plugins: {
+                                legend: {
+                                    display: false
+                                }
                             }
                         },
                 });

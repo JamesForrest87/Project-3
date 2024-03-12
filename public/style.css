@@ -661,13 +661,13 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh; /* Adjust height as needed */
+  height: 80vh; /* Adjust height as needed */
 }
 
 .vehicleBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
+  justify-content: top;
+  align-items: top;
   height: 75vh; /* Adjust height as needed */
 }
 
