@@ -49,6 +49,8 @@ Clone this repository to your local machine.
 Open the repository in terminal, gitbash or terminal in VScode within the terminal or gitbash, run npm install 
 After running npm install, then run npm run start  
 After that, select the local host at the bottom and it should take you to the server 
+
+if this doesn't work, try copying the json.package and node modules across!
 Enjoy some Star Wars graphs! 
 
 Acknowledgments:
