@@ -52,5 +52,17 @@ After that, select the local host at the bottom and it should take you to the se
 
 Enjoy some Star Wars graphs! 
 
+Below are a few screenshots from the server:
+
+<img width="1706" alt="Screenshot 2024-03-12 at 9 43 39 PM" src="https://github.com/JamesForrest87/Project-3/assets/145158606/af335931-4557-4f23-a7f6-46202df0f174">
+
+<img width="1710" alt="Screenshot 2024-03-12 at 9 44 00 PM" src="https://github.com/JamesForrest87/Project-3/assets/145158606/4340545b-5fe5-41c8-9f6e-52362a67dab4">
+
+<img width="1709" alt="Screenshot 2024-03-12 at 9 42 07 PM" src="https://github.com/JamesForrest87/Project-3/assets/145158606/0517b502-8b58-4647-a20c-e532170cfbb5">
+
+
+
+
+
 Acknowledgments:
 We would like to express our gratitude to the contributors of the Star Wars API (SWAPI), Legos Brickset and Kaggle CSV datasets used in this project. Their efforts in compiling and maintaining these datasets have been instrumental in enabling our exploration of the Star Wars universe through data analysis and visualization. We would also like to thank Nicholas' cousin, Jeffrey, for his help in understanding how to launch the site fully and intigrate our graphs in an easy way on the website.
